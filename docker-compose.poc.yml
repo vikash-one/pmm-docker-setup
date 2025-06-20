@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  pmm-server:
+    volumes:
+      - pmm-poc-data:/srv
+
+volumes:
+  pmm-poc-data:
