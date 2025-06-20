@@ -3,7 +3,7 @@ version: '3.8'
 services:
   pmm-server:
     image: percona/pmm-server:${PMM_TAG}
-    container_name: pmm-server
+    container_name: ${PMM_CONTAINER_NAME}
     restart: always
     ports:
       - "${PMM_PORT}:8443"

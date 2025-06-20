@@ -7,3 +7,4 @@ services:
 
 volumes:
   pmm-poc-data:
+    name: pmm-poc-data

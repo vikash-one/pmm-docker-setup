@@ -1,5 +1,7 @@
 #!/bin/bash
-VOLUME_NAME="pmm-server-data"  # or "pmm-poc-data"
+
+ENVIRONMENT=poc
+VOLUME_NAME="pmm-${ENVIRONMENT}-data"
 BACKUP_DIR="/opt/pmm-backup"
 TIMESTAMP=$(date +%F-%H-%M)
 BACKUP_FILE="${BACKUP_DIR}/${VOLUME_NAME}_${TIMESTAMP}.tar.gz"
